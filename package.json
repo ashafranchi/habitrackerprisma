@@ -2,9 +2,13 @@
   "name": "prismanext",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "generate": "yarn run generate:prisma && yarn run generate:nexus",
+    "generate:prisma": "prisma generate",
+    "generate:nexus": "ts-node --transpile-only pages/api",
     "start": "next start"
   },
   "repository": {
@@ -19,12 +23,21 @@
   "homepage": "https://github.com/ashafranchi/prismanext#readme",
   "dependencies": {
     "-": "^0.0.1",
+    "@nexus/schema": "^0.17.0",
+    "@prisma/cli": "2.10.2",
+    "@prisma/client": "2.10.2",
     "@types/node": "^14.14.6",
     "@types/react": "^16.9.56",
+    "apollo-server": "^2.19.0",
     "formik": "^2.2.3",
+    "graphql": "^15.4.0",
     "next": "^10.0.1",
+    "nexus": "^0.30.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "typescript": "^4.0.5"
+  },
+  "devDependencies": {
+    "ts-node": "^9.0.0"
   }
 }
