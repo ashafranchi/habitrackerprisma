@@ -1,0 +1,30 @@
+{
+  "name": "prismanext",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashafranchi/prismanext.git"
+  },
+  "author": "Asha Franchi <asha.d.franchi@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashafranchi/prismanext/issues"
+  },
+  "homepage": "https://github.com/ashafranchi/prismanext#readme",
+  "dependencies": {
+    "-": "^0.0.1",
+    "@types/node": "^14.14.6",
+    "@types/react": "^16.9.56",
+    "formik": "^2.2.3",
+    "next": "^10.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "typescript": "^4.0.5"
+  }
+}
